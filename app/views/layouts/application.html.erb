@@ -11,9 +11,7 @@
 
   <body>
     <p id="notice"><%= notice %></p>
-    <% flash.each do |key, value| %>
-      <%= content_tag(:div, value, class: "#{key}") %>
-    <% end %>
+
     <% if logged_in? %>
     <ul>
       <li id="tasks-index">
